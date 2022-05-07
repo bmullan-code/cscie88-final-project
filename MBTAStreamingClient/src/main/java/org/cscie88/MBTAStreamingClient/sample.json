@@ -1,0 +1,7 @@
+{"attributes":{"bearing":45,"current_status":"INCOMING_AT","current_stop_sequence":4,
+			  "direction_id":1,"label":"3087","latitude":42.2687,"longitude":-71.07989,
+			  "occupancy_status":null,"speed":11.4,"updated_at":"2022-04-23T11:48:40-04:00"},
+			  "id":"G-10046","links":{"self":"/vehicles/G-10046"},
+			  "relationships":{"route":{"data":{"id":"Mattapan","type":"route"}},
+			  "stop":{"data":{"id":"70270","type":"stop"}},
+			  "trip":{"data":{"id":"50933526","type":"trip"}}},"type":"vehicle"}
