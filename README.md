@@ -2,7 +2,7 @@
 CSCIE88 Final Project - Materialized Views from an event sourced data stream. 
 
 
-# Setup
+## Setup
 
 Pre-requisites: 
 - Docker desktop/cli and docker-compose.
@@ -25,7 +25,7 @@ docker tag mbtakafkaconsumer:latest <your-dockerhub-account>/mbtakafkaconsumer:l
 ./scripts/create-volumes.sh
 ```
 
-Running the services
+## Running the services
 
 - from a shell run the following commands
 ```
