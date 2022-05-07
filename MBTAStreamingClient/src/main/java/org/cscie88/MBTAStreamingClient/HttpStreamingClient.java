@@ -75,7 +75,7 @@ public class HttpStreamingClient {
         };
 
         /**
-         * curl -sN -H "accept: text/event-stream" -H "x-api-key: 948fdf59bd114be9b9af1bcfea2d93ad" "https://api-v3.mbta.com/vehicles"
+         * curl -sN -H "accept: text/event-stream" -H "x-api-key: <api-key>" "https://api-v3.mbta.com/vehicles"
          * create a web client to the mbta api and add the necessary headers (api key & accept)
          * this code is based on the example from this article
          * https://www.baeldung.com/spring-server-sent-events
