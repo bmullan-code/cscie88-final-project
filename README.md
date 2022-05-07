@@ -20,6 +20,12 @@ becomes
 ```
 docker tag mbtakafkaconsumer:latest <your-dockerhub-account>/mbtakafkaconsumer:latest
 ```
+- from your project directory run the script *create-volumes.sh* This will create the docker volume directories (under the docker/final-project directory) that zookeeper, kafka and filebeat data is written.
+```
+./scripts/create-volumes.sh
+```
+
+
 
 
 
