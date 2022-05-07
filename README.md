@@ -20,10 +20,23 @@ becomes
 ```
 docker tag mbtakafkaconsumer:latest <your-dockerhub-account>/mbtakafkaconsumer:latest
 ```
-- from your project directory run the script *create-volumes.sh* This will create the docker volume directories (under the docker/final-project directory) that zookeeper, kafka and filebeat data is written.
+- from your project directory run the script *create-volumes.sh* This will create the docker volume directories (under the docker/final-project directory) that zookeeper, kafka and filebeat data is written to.
 ```
 ./scripts/create-volumes.sh
 ```
+
+Running the services
+
+- from a shell run the following commands
+```
+cd docker
+export MBTA_API_KEY=<your-api-key-from-step-above>
+docker-compose up -d
+```
+You should see something like this ...
+![This is an image](https://raw.githubusercontent.com/bmullan-pivotal/cscie88-final-project/main/doc/docker-compose.jpg)
+
+
 
 
 
