@@ -36,6 +36,24 @@ docker-compose up -d
 You should see something like this ...
 ![This is an image](https://raw.githubusercontent.com/bmullan-pivotal/cscie88-final-project/main/doc/docker-compose.jpg)
 
+- You can check the logs with 
+```
+docker logs mbtastreamingclient
+docker logs mbtakafkaconsumer
+```
+
+- You can test the rest api is active with a curl command
+```
+curl localhost:8080/routes
+["Green-B","34","112","211","137","43","109","222","713","44","CR-Kingston",..]
+```
+
+- You can access the kibana dashboard by browsing to 
+```
+http://localhost:5601
+```
+
+
 
 
 
