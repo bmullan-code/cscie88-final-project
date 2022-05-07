@@ -1,7 +1,6 @@
 ## CSCIE88 - Principles of Big Data Processing
-### Barry Mullan - Final Project
 ### CSCIE88 Final Project - Materialized Views from an event sourced data stream. 
-
+### Barry Mullan - Final Project
 
 ## Setup
 
