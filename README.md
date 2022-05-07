@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/bmullan-pivotal/cscie88-final-project/main/doc/DCE-Logo-Full.png" width="100" height="100">
+<img src="https://raw.githubusercontent.com/bmullan-pivotal/cscie88-final-project/main/doc/EXT_1-line_RGB_web_300px.png">
 ## CSCIE88 - Principles of Big Data Processing
 ### CSCIE88 Final Project - Materialized Views from an event sourced data stream. 
 ### Barry Mullan - Final Project
