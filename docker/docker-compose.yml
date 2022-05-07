@@ -9,9 +9,11 @@ services:
   mbtastreamingclient:
     container_name: mbtastreamingclient
     image: barrymullan/mbtastreamingclient:latest
+    environment:
+    - MBTA_API_KEY
     networks:
     - es-net
-
+    
   mbtakafkaconsumer:
     container_name: mbtakafkaconsumer
     hostname: mbtakafkaconsumer
@@ -29,7 +31,6 @@ services:
     - es-net
     volumes:
       - $PWD/final-project/volumes/filebeat/data:/usr/share/filebeat/data
-      # - $PWD/final-project/volumes/filebeat:/usr/share/filebeat
       - $PWD/final-project/volumes/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
     environment:
       - ELASTICSEARCH_HOST=es-container
