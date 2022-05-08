@@ -25,6 +25,7 @@ public class VehicleJsonSerializer extends JsonSerializer<Vehicle> {
         g.writeStringField("id", v.getId());
         g.writeStringField("route", v.getRoute());
         g.writeStringField("updated", v.getUpdatedAt());
+        g.writeStringField("status", v.getStatus());
             g.writeFieldName("location");
             g.writeStartObject();
             g.writeStringField("lat", v.getLat());

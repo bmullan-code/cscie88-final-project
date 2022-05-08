@@ -36,8 +36,11 @@ public class MbtaKafkaListener {
 
         switch(event) {
             // update the saved vehicle, and add it to the route list
+            case "add":
+            case "reset":
             case "update" : {
                 Vehicle v = new Vehicle(message);
+                checkVehicleStatus(v);
                 vehicleService.save(v.getId(),v.getJson());
                 routeService.save(v.getRoute(), v.getId());
                 break;
@@ -49,7 +52,22 @@ public class MbtaKafkaListener {
                 Vehicle deleteV = new Vehicle(vehicleService.findById(v.getId()));
                 routeService.deleteVehicle(deleteV.getRoute(),deleteV.getId());
                 vehicleService.delete(deleteV.getId());
+                break;
             }
+        }
+    }
+
+    private void checkVehicleStatus(Vehicle v) {
+
+        try {
+            // if vehicle is arriving at a stop, compare updated time to schedule time
+            if ( v.getCurrentStatus().compareTo("INCOMING_AT")==0) {
+                Schedule schedule = new Schedule(v.getTrip(), v.getStop());
+                v.setStatus(schedule.getStatus(v.getUpdatedAt()));
+            }
+
+        } catch(Exception e) {
+            e.printStackTrace();
         }
     }
 
