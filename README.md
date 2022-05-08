@@ -4,6 +4,10 @@
 ### CSCIE88 Final Project - Materialized Views from an event sourced data stream. 
 ### Barry Mullan - Final Project
 
+[Presentation](https://docs.google.com/presentation/d/1kYux82d5CYUEyqqP-1wLr8UUsVeE7VpMYaRoqQ53NP0/edit?usp=sharing)
+
+[Video of Presentation](https://youtu.be/DMkliDzJvSA)
+
 ## Setup
 
 Pre-requisites: 
