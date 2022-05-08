@@ -8,6 +8,8 @@
 
 [Video of Presentation](https://youtu.be/DMkliDzJvSA)
 
+[Architecture Diagram](https://docs.google.com/drawings/d/17Tj_Xhco8NIjbJ5BDR9zXWQTYtZJN8OZGV8l98lxbYo/edit?usp=sharing)
+
 ## Setup
 
 Pre-requisites: 
